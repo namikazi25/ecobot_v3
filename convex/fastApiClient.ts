@@ -1,7 +1,5 @@
 "use node";
 
-import { v } from "convex/values";
-
 interface Message {
   content: string;
   role: string;
@@ -16,7 +14,7 @@ interface AgentRequest {
   messages: Message[];
   files?: FileInfo[];
   model: string;
-  mode: "normal" | "advanced";
+  mode: "normal" | "deep_research";
   sessionId: string;
 }
 

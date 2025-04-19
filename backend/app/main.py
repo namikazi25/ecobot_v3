@@ -10,8 +10,8 @@ import json
 
 from langchain_core.messages import SystemMessage, HumanMessage, AIMessage
 from langchain.agents import AgentExecutor
-from agent.chains import create_agent_chain
-from agent.tools import get_tools
+from .agent.chains import create_agent_chain
+from .agent.tools import get_tools
 
 # Load environment variables
 load_dotenv()

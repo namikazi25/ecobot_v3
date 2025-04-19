@@ -39,7 +39,7 @@ export const generateResponse = action({
     sessionId: v.id("sessions"),
     messageId: v.id("messages"),
     model: v.string(),
-    mode: v.union(v.literal("normal"), v.literal("advanced")),
+    mode: v.union(v.literal("normal"), v.literal("deep_research")),
   },
   handler: async (ctx, args) => {
     // Get message content and files
